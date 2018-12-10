@@ -24,8 +24,18 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				
+				<section>Slide 1: this is a reveal.js presentation</section>
+				<section>Slide 2: formatting is an issue</section>
+				<section>Slide 3: adding slides seems easy</section>
+				<section data-markdown>
+	                    <textarea data-template>
+		                 # Page title
+                     A paragraph with some text and a [link](http://hakim.se).
+	                  </textarea> </section>
+				<section>
+				<p class="stretch"><img src="IMG_0471.png"></p>
+		    </section>
 			</div>
 		</div>
 
@@ -37,6 +47,10 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+		       // Transition style
+	               transition: 'none', // none/fade/slide/convex/concave/zoom
+                       // Transition speed
+	                transitionSpeed: 'default', // default/fast/slow
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
